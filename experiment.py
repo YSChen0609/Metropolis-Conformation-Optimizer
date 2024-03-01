@@ -7,6 +7,8 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
+from mcmc import MCMC
+
 
 def experiment(config):
     def plot_trajectory(records):
