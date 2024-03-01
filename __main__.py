@@ -1,14 +1,14 @@
 # __main__.py
 
-from config import config
+from config import Config
 from experiment import experiment
 
 
 def main():
-    # Config for experimenting optimization for methane
+    # Config for experimenting optimization for methane.
     
     # kT_list is decided based on the following:
-    # The melting point of methane is approximately 90 Kelvin. (kT=0.179)
+    # The melting point of methane is approximately 90 Kelvin (kT=0.179).
     # The boiling point of methane is approximately 112 Kelvin (kT=0.2224).
     # The auto-ignition point of methane is approximately 813 Kelvin (kT=1.615).
     

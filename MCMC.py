@@ -3,6 +3,8 @@
 import pandas as pd
 import numpy as np
 
+from imports import *
+
 class MCMC():
     """
     Implement the Metropolis algorithm to optimize (find) the conformation with a starting conformation.
@@ -23,10 +25,10 @@ class MCMC():
         X_i    = self.starting_conformation.copy() # this sample
         X_min  = self.starting_conformation.copy()
         result = [{
-                        'round': 1,
-                        'E_min': E_min, # lowest energy so far
-                        'kT'   : kT
-                    }]
+                    'round': 1,
+                    'E_min': E_min, # lowest energy so far
+                    'kT'   : kT
+                  }]
 
         # Execute the Metropolis Algo. for certain iterations
         for i in range(1, self.config.iter_rounds+1):
